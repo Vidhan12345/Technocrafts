@@ -50,8 +50,33 @@ class StageActivity : AppCompatActivity() {
         val input16 = intent.getStringExtra(MoneyActivity.KEY16)
         val input17 = intent.getStringExtra(MoneyActivity.KEY17)
 
-//        textView1.text = "Input 1: $input1"
-//        textView2.text = "Input 2: $input2"
+
+//        tv1.text = "Your company is spending more money on infrastructure than needed . "
+//        tv2.text = "Your company is investing more than the money you need for service staff . You can optimise it by laying of some staff"
+//        tv3.text = "You need to pay attention on your expenditure on the technical staff you are "
+//        tv4.text = "You have more investors and less valuation"
+//        tv5.text = "Raised fund is more than needed"
+//        tv6.text = "Working hours of service staff is more than required hours"
+//        tv7.text = "Raised fund is more than needed"
+//        tv8.text = "You are overspending on service staff"
+//        tv9.text = "You are overspending on technical staff"
+//        tv10.text = "Your company is making Good Profit"
+
+
+
+//        tv1.text = "Your company needs to spend some Money On Infrastructure  . "
+//        tv2.text = "Your company is investing more than the money you need for service staff . You can optimise it by laying of some staff"
+//        tv3.text = "You need to pay attention on your expenditure on the technical staff you are "
+//        tv4.text = "You have more investors and less valuation"
+//        tv5.text = "Raised fund is more than needed"
+//        tv6.text = "Working hours of service staff is more than required hours"
+//        tv7.text = "Raised fund is more than needed"
+//        tv8.text = "You are overspending on service staff"
+//        tv9.text = "You are overspending on technical staff"
+//        tv10.text = "Your company is making Good Profit"
+
+
+        tv2.text = "Input 2: $input2"
 //        textView3.text = "Input 3: $input3"
 //        textView4.text = "Input 4: $input4"
 
@@ -65,22 +90,24 @@ class StageActivity : AppCompatActivity() {
 //
 
 
-        val demo = input2?.toIntOrNull()
-        //input 2
-        if (input2 != null) {
-            if (demo != null) {
-                if(demo>150600){
-                    var text1 = "Your company is spending more money on infrastructure than needed .  "
-                    tv1.text = "$text1"
-                } else if (demo < 105600 && demo > 10 ){
-                    var text1 = "Your company is spending Right amount of money need for expansion infrastructure than needed .  "
-                    tv1.text = "$text1"
-                } else if(demo< 10){
-                    var text1 = "Your company needs to spend more money on infrastructure if you want to Grow . "
-                    tv1.text = "$text1"
-                }
-            }
-        }
+//        val demo = input2?.toIntOrNull()
+//        //input 2
+//        if (input2 != null) {
+//            if (demo != null) {
+//                if(demo>150600){
+//                    var text1 = "Your company is spending more money on infrastructure than needed .  "
+//                    tv1.text = "$text1"
+//                } else if (demo < 105600 && demo > 10 ){
+//                    var text1 = "Your company is spending Right amount of money need for expansion infrastructure than needed .  "
+//                    tv1.text = "$text1"
+//                } else if(demo< 10){
+//                    var text1 = "Your company needs to spend more money on infrastructure if you want to Grow . "
+//                    tv1.text = "$text1"
+//                }
+//            }
+//        }
+
+
 //
 //
 //

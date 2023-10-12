@@ -68,6 +68,7 @@ class LabourActivity : AppCompatActivity() {
             intent2.putExtra(KEY10,Techour2)
             intent2.putExtra(KEY11,Moneyservice2)
             intent2.putExtra(KEY12,Moneytech2)
+
             startActivity(intent)
         }
 

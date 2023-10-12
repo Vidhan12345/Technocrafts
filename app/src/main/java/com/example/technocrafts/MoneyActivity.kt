@@ -57,12 +57,12 @@ class MoneyActivity : AppCompatActivity() {
             val ror2 = Ror.text.toString()
 
             val intent = Intent(applicationContext,StageActivity::class.java)
-//
-//            ayush.putExtra(KEY13,profit2)
-//            ayush.putExtra(KEY14,gross_sales2)
-//            ayush.putExtra(KEY15,revenue2)
-//            ayush.putExtra(KEY16,networth2)
-//            ayush.putExtra(KEY17,ror2)
+
+            intent.putExtra(KEY13,profit2)
+            intent.putExtra(KEY14,gross_sales2)
+            intent.putExtra(KEY15,revenue2)
+            intent.putExtra(KEY16,networth2)
+            intent.putExtra(KEY17,ror2)
 
             startActivity(intent)
 
