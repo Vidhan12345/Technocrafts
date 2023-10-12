@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "10214927927",
+    "project_id": "technocrafts-cc6ff",
+    "storage_bucket": "technocrafts-cc6ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10214927927:android:b6b9cc312c61012ef1d9b2",
+        "android_client_info": {
+          "package_name": "com.example.technocrafts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbJMl3ZTHJYCtbNLU7mAhCPnlrUz82uDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
