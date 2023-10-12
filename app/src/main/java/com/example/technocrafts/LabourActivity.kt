@@ -13,10 +13,10 @@ class LabourActivity : AppCompatActivity() {
     lateinit var database : DatabaseReference
     // Creating Keys
     companion object {
-        const val KEY1 = "com.example.Cafe.LabourActivity.KEY1"
-        const val KEY2 = "com.example.Cafe.LabourActivity.KEY2"
-        const val KEY3 = "com.example.Cafe.LabourActivity.KEY3"
-        const val KEY4 = "com.example.Cafe.LabourActivity.KEY4"
+        const val KEY9 = "com.example.Cafe.LabourActivity.KEY1"
+        const val KEY10 = "com.example.Cafe.LabourActivity.KEY2"
+        const val KEY11= "com.example.Cafe.LabourActivity.KEY3"
+        const val KEY12 = "com.example.Cafe.LabourActivity.KEY4"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -64,10 +64,10 @@ class LabourActivity : AppCompatActivity() {
             val intent = Intent(applicationContext,MoneyActivity::class.java)
             val intent2 = Intent(applicationContext,StageActivity::class.java)
 
-            intent2.putExtra(InfraActivity.KEY1,servicehour2)
-            intent2.putExtra(InfraActivity.KEY2,Techour2)
-            intent2.putExtra(InfraActivity.KEY3,Moneyservice2)
-            intent2.putExtra(InfraActivity.KEY4,Moneytech2)
+            intent2.putExtra(KEY9,servicehour2)
+            intent2.putExtra(KEY10,Techour2)
+            intent2.putExtra(KEY11,Moneyservice2)
+            intent2.putExtra(KEY12,Moneytech2)
             startActivity(intent)
         }
 

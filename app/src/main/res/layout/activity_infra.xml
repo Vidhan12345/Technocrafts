@@ -12,11 +12,11 @@
         android:layout_height="match_parent"
         android:contentDescription="@string/Scrview"
         tools:ignore="UselessParent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -25,6 +25,7 @@
                 android:layout_marginTop="20dp"
                 android:text="How much you invested on hard infrastructure (physical system needed for operation) ?"
                 android:textSize="20sp" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="409dp"
                 android:layout_height="wrap_content"
@@ -32,9 +33,9 @@
                 tools:layout_editor_absoluteY="111dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/hard_infra"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/hard_infra"
                     android:layout_marginStart="20dp"
                     android:hint="@string/empty" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -46,6 +47,7 @@
                 android:layout_marginTop="20dp"
                 android:text="what is your expense last year on Soft Infrastructure "
                 android:textSize="20sp" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="409dp"
                 android:layout_height="wrap_content"
@@ -69,6 +71,7 @@
                 android:layout_marginTop="20dp"
                 android:text="How much  your Total Expense on  Service Staff"
                 android:textSize="20sp" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="409dp"
                 android:layout_height="wrap_content"
@@ -92,6 +95,7 @@
                 android:layout_marginTop="20dp"
                 android:text="How much Your total expense on Technical working Staff"
                 android:textSize="20sp" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="409dp"
                 android:layout_height="wrap_content"
@@ -114,6 +118,7 @@
                 android:layout_marginTop="20dp"
                 android:text="Your expense on Advertisement : "
                 android:textSize="20sp" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="409dp"
                 android:layout_height="wrap_content"
@@ -134,27 +139,21 @@
                 android:id="@+id/infraBtn1"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:backgroundTint="@color/yellow"
-                android:layout_gravity="center"
                 android:text="Past Data"
-                android:textColor="@color/black"
-                />
+                android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/infraBtn2"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:backgroundTint="@color/yellow"
-                android:layout_gravity="center"
                 android:text="Present Data"
-                android:textColor="@color/black"
-                />
-
-
-
-
+                android:textColor="@color/black" />
 
 
         </LinearLayout>

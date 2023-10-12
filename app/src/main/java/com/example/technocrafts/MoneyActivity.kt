@@ -13,10 +13,11 @@ class MoneyActivity : AppCompatActivity() {
     lateinit var database : DatabaseReference
     // Creating Keys
     companion object {
-        const val KEY1 = "com.example.Cafe.MoneyActivity.KEY1"
-        const val KEY2 = "com.example.Cafe.MoneyActivity.KEY2"
-        const val KEY3 = "com.example.Cafe.MoneyActivity.KEY3"
-        const val KEY4 = "com.example.Cafe.MoneyActivity.KEY4"
+        const val KEY13 = "com.example.Cafe.MoneyActivity.KEY1"
+        const val KEY14 = "com.example.Cafe.MoneyActivity.KEY2"
+        const val KEY15 = "com.example.Cafe.MoneyActivity.KEY3"
+        const val KEY16 = "com.example.Cafe.MoneyActivity.KEY4"
+        const val KEY17 = "com.example.Cafe.MoneyActivity.KEY5"
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,12 +58,13 @@ class MoneyActivity : AppCompatActivity() {
 
             val intent2 = Intent(applicationContext,StageActivity::class.java)
 
-            intent2.putExtra(InfraActivity.KEY1,profit2)
-            intent2.putExtra(InfraActivity.KEY2,gross_sales2)
-            intent2.putExtra(InfraActivity.KEY3,revenue2)
-            intent2.putExtra(InfraActivity.KEY4,networth2)
-            intent2.putExtra(InfraActivity.KEY4,ror2)
+            intent2.putExtra(KEY13,profit2)
+            intent2.putExtra(KEY14,gross_sales2)
+            intent2.putExtra(KEY15,revenue2)
+            intent2.putExtra(KEY16,networth2)
+            intent2.putExtra(KEY17,ror2)
 
+startActivity(intent2)
 
         }
         

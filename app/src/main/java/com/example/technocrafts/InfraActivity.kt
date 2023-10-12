@@ -18,6 +18,7 @@ class InfraActivity : AppCompatActivity() {
         const val KEY3 = "com.example.Cafe.InfraActivity.KEY3"
         const val KEY4 = "com.example.Cafe.InfraActivity.KEY4"
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_infra)
