@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Technocrafts"
         tools:targetApi="31">
         <activity
+            android:name=".StageActivity"
+            android:exported="false" />
+        <activity
             android:name=".MoneyActivity"
             android:exported="false" />
         <activity
@@ -22,7 +25,7 @@
             android:name=".LabourActivity"
             android:exported="false" />
         <activity
-            android:name=".PastDetailActivity"
+            android:name=".InvestorActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"

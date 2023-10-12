@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PastDetailActivity">
+    tools:context=".InvestorActivity">
 
 
     <ScrollView
@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/enter_the_company_name"
+                android:text="How much you invested on hard infrastructure (physical system needed for operation) ?"
                 android:textSize="20sp" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="409dp"
@@ -34,7 +34,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id=""
+                    android:id="@+id/hard_infra"
                     android:layout_marginStart="20dp"
                     android:hint="@string/empty" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/enter_the_compan_value_in_rupees"
+                android:text="what is your expense last year on Soft Infrastructure "
                 android:textSize="20sp" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="409dp"
@@ -53,7 +53,7 @@
                 tools:layout_editor_absoluteY="111dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id=""
+                    android:id="@+id/soft_infra"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/number_of_investors"
+                android:text="How much  your Total Expense on  Service Staff"
                 android:textSize="20sp" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="409dp"
@@ -77,7 +77,7 @@
                 tools:layout_editor_absoluteY="111dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id=""
+                    android:id="@+id/serviceStaff"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/empty"
@@ -90,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/number_of_share_holders"
+                android:text="How much Your total expense on Technical working Staff"
                 android:textSize="20sp" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="409dp"
@@ -99,30 +99,7 @@
                 tools:layout_editor_absoluteY="111dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id=""
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:hint="@string/empty"
-                    tools:ignore="TextContrastCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:text="@string/percentage_of_share_hold_by_promoters"
-                android:textSize="20sp" />
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="409dp"
-                android:layout_height="wrap_content"
-                tools:layout_editor_absoluteX="1dp"
-                tools:layout_editor_absoluteY="111dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id=""
+                    android:id="@+id/techinalStaff"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -135,7 +112,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/percentage_of_money_invested_in_mutual_funds"
+                android:text="Your expense on Advertisement : "
                 android:textSize="20sp" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="409dp"
@@ -144,7 +121,7 @@
                 tools:layout_editor_absoluteY="111dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id=""
+                    android:id="@+id/advert"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -152,64 +129,33 @@
                     tools:ignore="TextContrastCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:text="@string/number_of_investment_raising_round_in_currennt_year"
-                android:textSize="20sp" />
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="409dp"
-                android:layout_height="wrap_content"
-                tools:layout_editor_absoluteX="1dp"
-                tools:layout_editor_absoluteY="111dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id=""
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:hint="@string/empty"
-                    android:textColorHint="#546E7A"
-                    tools:ignore="TextContrastCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:text="@string/money_raised_in_last_round"
-                android:textSize="20sp"></TextView>
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="409dp"
-                android:layout_height="wrap_content"
-                tools:layout_editor_absoluteX="1dp"
-                tools:layout_editor_absoluteY="111dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id=""
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:hint="@string/empty"
-                    android:textColorHint="#546E7A"
-                    tools:ignore="TextContrastCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id=""
+                android:id="@+id/infraBtn1"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:backgroundTint="@color/yellow"
                 android:layout_gravity="center"
-                android:text="@string/confirm"
+                android:text="Past Data"
                 android:textColor="@color/black"
                 />
+
+            <Button
+                android:id="@+id/infraBtn2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:backgroundTint="@color/yellow"
+                android:layout_gravity="center"
+                android:text="Present Data"
+                android:textColor="@color/black"
+                />
+
+
+
+
+
 
         </LinearLayout>
     </ScrollView>

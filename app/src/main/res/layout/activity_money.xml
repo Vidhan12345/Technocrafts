@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PastDetailActivity">
+    tools:context=".InvestorActivity">
 
 
     <ScrollView
@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="Enter profit generated last year : "
+                android:text="Enter Profit generated Last year :"
                 android:textSize="20sp" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="409dp"
@@ -90,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text=""
+                android:text="Net worth of company :"
                 android:textSize="20sp" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="409dp"
@@ -99,7 +99,7 @@
                 tools:layout_editor_absoluteY="111dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id=""
+                    android:id="@+id/networth"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/percentage_of_share_hold_by_promoters"
+                android:text="what is average Rate of Return "
                 android:textSize="20sp" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="409dp"
@@ -122,7 +122,7 @@
                 tools:layout_editor_absoluteY="111dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id=""
+                    android:id="@+id/ror"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -130,84 +130,25 @@
                     tools:ignore="TextContrastCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:text="@string/percentage_of_money_invested_in_mutual_funds"
-                android:textSize="20sp" />
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="409dp"
-                android:layout_height="wrap_content"
-                tools:layout_editor_absoluteX="1dp"
-                tools:layout_editor_absoluteY="111dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id=""
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:hint="@string/empty"
-                    tools:ignore="TextContrastCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:text="@string/number_of_investment_raising_round_in_currennt_year"
-                android:textSize="20sp" />
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="409dp"
-                android:layout_height="wrap_content"
-                tools:layout_editor_absoluteX="1dp"
-                tools:layout_editor_absoluteY="111dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id=""
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:hint="@string/empty"
-                    android:textColorHint="#546E7A"
-                    tools:ignore="TextContrastCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:text="@string/money_raised_in_last_round"
-                android:textSize="20sp"></TextView>
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="409dp"
-                android:layout_height="wrap_content"
-                tools:layout_editor_absoluteX="1dp"
-                tools:layout_editor_absoluteY="111dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id=""
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:hint="@string/empty"
-                    android:textColorHint="#546E7A"
-                    tools:ignore="TextContrastCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id=""
+                android:id="@+id/moneyBtn1"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:backgroundTint="@color/yellow"
                 android:layout_gravity="center"
-                android:text="@string/confirm"
+                android:text="Past Data"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/moneyBtn2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:backgroundTint="@color/yellow"
+                android:layout_gravity="center"
+                android:text="Present Data"
                 android:textColor="@color/black"
                 />
 

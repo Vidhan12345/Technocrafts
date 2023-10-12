@@ -1,11 +1,70 @@
 package com.example.technocrafts
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
+import com.google.android.material.textfield.TextInputEditText
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class MoneyActivity : AppCompatActivity() {
+    lateinit var database : DatabaseReference
+    // Creating Keys
+    companion object {
+        const val KEY1 = "com.example.Cafe.MoneyActivity.KEY1"
+        const val KEY2 = "com.example.Cafe.MoneyActivity.KEY2"
+        const val KEY3 = "com.example.Cafe.MoneyActivity.KEY3"
+        const val KEY4 = "com.example.Cafe.MoneyActivity.KEY4"
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_money)
+
+
+        val past = findViewById<Button>(R.id.moneyBtn1)
+        val present = findViewById<Button>(R.id.moneyBtn2)
+        val Profit = findViewById<TextInputEditText>(R.id.profit)
+        val Gross_sales = findViewById<TextInputEditText>(R.id.gross_sales)
+        val Revenue = findViewById<TextInputEditText>(R.id.revenue)
+        val net_worth = findViewById<TextInputEditText>(R.id.networth)
+        val Ror = findViewById<TextInputEditText>(R.id.ror)
+        past.setOnClickListener{
+
+            val profit = Profit.text.toString()
+            val gross_sales = Gross_sales.text.toString()
+            val revenue =Revenue.text.toString()
+            val networth = net_worth.text.toString()
+            val ror = Ror.text.toString()
+
+            val data = Infra(profit,gross_sales,revenue,networth,ror)
+            database = FirebaseDatabase.getInstance().getReference("Money")
+
+            database.child(profit).setValue(data).addOnSuccessListener {
+                Toast.makeText(this, "Money Details Added", Toast.LENGTH_SHORT).show()
+            }.addOnFailureListener {
+                Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
+            }
+
+        }
+        present.setOnClickListener{
+            val profit2 = Profit.text.toString()
+            val gross_sales2 = Gross_sales.text.toString()
+            val revenue2 =Revenue.text.toString()
+            val networth2 = net_worth.text.toString()
+            val ror2 = Ror.text.toString()
+
+            val intent2 = Intent(applicationContext,StageActivity::class.java)
+
+            intent2.putExtra(InfraActivity.KEY1,profit2)
+            intent2.putExtra(InfraActivity.KEY2,gross_sales2)
+            intent2.putExtra(InfraActivity.KEY3,revenue2)
+            intent2.putExtra(InfraActivity.KEY4,networth2)
+            intent2.putExtra(InfraActivity.KEY4,ror2)
+
+
+        }
+        
     }
 }
