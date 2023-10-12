@@ -3,4 +3,18 @@
     <string name="gov">Enter as Government</string>
     <string name="pri">Enter as Business Man</string>
     <string name="Scrview">Scrview</string>
+    <string name="empty">...</string>
+    <string name="enter_the_company_name">Enter the Company Name :</string>
+    <string name="enter_the_compan_value_in_rupees">Enter the Compan Value in Rupees :</string>
+    <string name="number_of_investors">Number of Investors :</string>
+    <string name="number_of_share_holders">Number of share Holders :</string>
+    <string name="percentage_of_share_hold_by_promoters">Percentage of share Hold by Promoters :</string>
+    <string name="percentage_of_money_invested_in_mutual_funds">Percentage of Money Invested in Mutual Funds :</string>
+    <string name="number_of_investment_raising_round_in_currennt_year">Number of Investment Raising Round in Currennt Year:</string>
+    <string name="money_raised_in_last_round">Money Raised in Last Round :</string>
+    <string name="confirm">Confirm</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="enter_your_mail_address">Enter your mail address</string>
+    <string name="if_already_registered_click_sign_in">If already registered, click SIGN IN</string>
+    <string name="buissnes_track">Buissnes Track</string>
 </resources>

@@ -19,12 +19,14 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/etName"
-            app:hintTextColor="@color/yellow"
+            android:hint="Enter your Name"
+            android:textColorHint="#757575"
             android:textStyle="normal"
-            android:hint="Enter your Name" />
+            app:hintTextColor="@color/yellow"
+            tools:ignore="HardcodedText,TextContrastCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -39,12 +41,14 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:hintTextColor="@color/yellow"
-            android:id="@+id/etMail"
+            android:hint="@string/enter_your_mail_address"
+            android:textColorHint="#757575"
             android:textStyle="normal"
-            android:hint="Enter your mail address" />
+            app:hintTextColor="@color/yellow"
+            tools:ignore="TextContrastCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -67,7 +71,8 @@
             android:layout_height="wrap_content"
             android:hint="Enter your Password"
             android:textStyle="normal"
-            app:hintTextColor="@color/yellow" />
+            app:hintTextColor="@color/yellow"
+            tools:ignore="HardcodedText,TextContrastCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -84,15 +89,15 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-
     <Button
         android:id="@+id/btnSignUp"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_margin="20dp"
         android:backgroundTint="@color/yellow"
-        android:layout_gravity="center"
-        android:text="SIGN UP" />
+        android:text="@string/sign_up"
+        android:textColor="#5C6BC0" />
 
     <TextView
         android:id="@+id/tvSignIN"
@@ -100,6 +105,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="If already registered, click SIGN IN" />
+        android:text="@string/if_already_registered_click_sign_in" />
 
 </LinearLayout>

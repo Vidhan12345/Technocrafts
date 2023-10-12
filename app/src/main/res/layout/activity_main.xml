@@ -14,15 +14,16 @@
         android:backgroundTint="@color/yellow"
         android:background="@color/yellow"
         android:gravity="center"
-        android:text="Buissnes Track"
+        android:text="@string/buissnes_track"
         android:textColor="@color/black"
-        android:textSize="40dp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/gov"
         app:layout_constraintEnd_toEndOf="@+id/gov"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/gov"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="VisualLintBounds" />
 
     <Button
         android:id="@+id/gov"
