@@ -49,6 +49,14 @@ class InvestorActivity : AppCompatActivity() {
             database = FirebaseDatabase.getInstance().getReference("Investor")
 
             database.child(com_name).setValue(data).addOnSuccessListener {
+                comname.text?.clear()
+                mutual.text?.clear()
+                investor.text?.clear()
+                raise.text?.clear()
+                raisedlast.text?.clear()
+                promoters.text?.clear()
+                shareholder.text?.clear()
+                comval.text?.clear()
                 Toast.makeText(this, "Investor Details Added", Toast.LENGTH_SHORT).show()
             }.addOnFailureListener {
                 Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()

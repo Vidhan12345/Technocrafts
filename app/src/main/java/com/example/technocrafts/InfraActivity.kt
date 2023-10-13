@@ -39,10 +39,17 @@ class InfraActivity : AppCompatActivity() {
             val technicalStaff = technical_staff.text.toString()
             val advert = ad_vert.text.toString()
 
+
+
             val data = Infra(hard_infra,soft_infra,serviceStaff,technicalStaff,advert)
             database = FirebaseDatabase.getInstance().getReference("Infra")
 
             database.child(hard_infra).setValue(data).addOnSuccessListener {
+                hardinfra.text?.clear()
+                softinfra.text?.clear()
+                service_staff.text?.clear()
+                technical_staff.text?.clear()
+                ad_vert.text?.clear()
                 Toast.makeText(this, "Infrastructure Details Added", Toast.LENGTH_SHORT).show()
             }.addOnFailureListener {
                 Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()

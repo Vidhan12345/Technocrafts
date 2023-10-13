@@ -43,6 +43,11 @@ class MoneyActivity : AppCompatActivity() {
             database = FirebaseDatabase.getInstance().getReference("Money")
 
             database.child(profit).setValue(data).addOnSuccessListener {
+                Profit.text?.clear()
+                Gross_sales.text?.clear()
+                Revenue.text?.clear()
+                net_worth.text?.clear()
+                Ror.text?.clear()
                 Toast.makeText(this, "Money Details Added", Toast.LENGTH_SHORT).show()
             }.addOnFailureListener {
                 Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()

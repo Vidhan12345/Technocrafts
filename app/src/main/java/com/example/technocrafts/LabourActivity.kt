@@ -45,6 +45,12 @@ class LabourActivity : AppCompatActivity() {
             database = FirebaseDatabase.getInstance().getReference("Labour")
 
             database.child(empaid).setValue(data).addOnSuccessListener {
+                em_paid.text?.clear()
+                service_hour.text?.clear()
+                tech_hour.text?.clear()
+                No_service_staff.text?.clear()
+                Money_service.text?.clear()
+                Money_tech.text?.clear()
                 Toast.makeText(this, "Labour Details Added", Toast.LENGTH_SHORT).show()
             }.addOnFailureListener {
                 Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
