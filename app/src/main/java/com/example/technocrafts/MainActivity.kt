@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val btngovIntent = findViewById<Button>(R.id.gov)
 
         btngovIntent.setOnClickListener{
-            intent = Intent(applicationContext,LoginActivity::class.java)
+            intent = Intent(applicationContext,GovActivity::class.java)
             startActivity(intent)
     }
 }}

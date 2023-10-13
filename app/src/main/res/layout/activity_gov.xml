@@ -166,15 +166,52 @@
                 android:layout_height="wrap_content"
                 android:text="Confirm Data"
                 android:layout_margin="20dp"
+                android:id="@+id/Confirm"
                 ></Button>
 
 
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="20dp"
+                android:id="@+id/gtv1"
+                ></TextView>
 
-            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="20dp"
+                android:id="@+id/gtv2"
+                ></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="20dp"
+                android:id="@+id/gtv3"
+                ></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="20dp"
+                android:id="@+id/gtv4"
+                ></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="20dp"
+                android:id="@+id/gtv5"
+                ></TextView>
+
 
 
         </LinearLayout>
