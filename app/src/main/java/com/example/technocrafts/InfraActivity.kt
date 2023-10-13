@@ -59,7 +59,7 @@ class InfraActivity : AppCompatActivity() {
 
 
             val intent1 = Intent(applicationContext,InvestorActivity::class.java)
-            val intent2 = Intent(applicationContext,StageActivity::class.java)
+            val intent2 = Intent(this,StageActivity::class.java)
 
             intent2.putExtra(KEY1,hard_infra2)
             intent2.putExtra(KEY2,soft_infra2)
