@@ -25,7 +25,7 @@ class StageActivity : AppCompatActivity() {
         val tv10 =findViewById<TextView>(R.id.textView14)
 
         // Retrieve user inputs of Infra from the intent
-        val input1 = intent.getStringExtra(InfraActivity.KEY1)
+//        val input1 = intent.getStringExtra("KEY1")
         val input2 = intent.getStringExtra(InfraActivity.KEY2)
         val input3 = intent.getStringExtra(InfraActivity.KEY3)
         val input4 = intent.getStringExtra(InfraActivity.KEY4)
@@ -54,7 +54,7 @@ class StageActivity : AppCompatActivity() {
 
 
 
-        tv2.text = "Input 2: $input2"
+//        tv2.text = "Input 2: $input2"
 //        textView3.text = "Input 3: $input3"
 //        textView4.text = "Input 4: $input4"
 
@@ -68,22 +68,22 @@ class StageActivity : AppCompatActivity() {
 //
 
 
-//        val demo = input2?.toIntOrNull()
-//        //input 2
-//        if (input2 != null) {
-//            if (demo != null) {
-//                if(demo>150600){
-//                    var text1 = "Your company is spending more money on infrastructure than needed .  "
-//                    tv1.text = "$text1"
-//                } else if (demo < 105600 && demo > 10 ){
-//                    var text1 = "Your company is spending Right amount of money need for expansion infrastructure than needed .  "
-//                    tv1.text = "$text1"
-//                } else if(demo< 10){
-//                    var text1 = "Your company needs to spend more money on infrastructure if you want to Grow . "
-//                    tv1.text = "$text1"
-//                }
-//            }
-//        }
+        val demo = input2?.toIntOrNull()
+        //input 2
+        if (input2 != null) {
+            if (demo != null) {
+                if(demo>150600){
+                    var text1 = "Your company is spending more money on infrastructure than needed .  "
+                    tv1.text = "$text1"
+                } else if (demo < 105600 && demo > 10 ){
+                    var text1 = "Your company is spending Right amount of money need for expansion infrastructure than needed .  "
+                    tv1.text = "$text1"
+                } else if(demo< 10){
+                    var text1 = "Your company needs to spend more money on infrastructure if you want to Grow . "
+                    tv1.text = "$text1"
+                }
+            }
+        }
 
 
 
@@ -214,83 +214,83 @@ tv10.text= "No need to worry about Profit it will soon find its way to you "
 tv10.text = "Need to work in profit making "
     }
 
-
-    if(input14!!.toInt() > 514)   {
-//      billion US DOLLAR
-
-    }
-    else if(input14!!.toInt() < 514 && input14!!.toInt() > 10){
-
-    }
-    else if(input14!!.toInt() < 10){
-
-    }
-
-// GRoss sales and revenue generated are same
-
-    if(input15!!.toInt() > 514)   {
-//      billion US DOLLAR
-
-    }
-    else if(input15!!.toInt() < 514 && input15!!.toInt() > 10){
-
-    }
-    else if(input15!!.toInt() < 10){
-
-    }
-
-// Networth of company
-    if(input16!!.toInt() > 1336)   {
-//      billion US DOLLAR
-
-    }
-    else if(input16!!.toInt() < 1336 && input16!!.toInt() > 25){
-
-    }
-    else if(input16!!.toInt() < 25){
-
-    }
-
-
-        // Networth of company
-    if(input17!!.toInt() > 15)   {
-//      billion US DOLLAR
-
-    }
-    else if(input17!!.toInt() < 15 && input17!!.toInt() > 13){
-
-    }
-    else if(input17!!.toInt() < 13){
-
-    }
-
-
+//
+//    if(input14!!.toInt() > 514)   {
+////      billion US DOLLAR
+//
+//    }
+//    else if(input14!!.toInt() < 514 && input14!!.toInt() > 10){
+//
+//    }
+//    else if(input14!!.toInt() < 10){
+//
+//    }
+//
+//// GRoss sales and revenue generated are same
+//
+//    if(input15!!.toInt() > 514)   {
+////      billion US DOLLAR
+//
+//    }
+//    else if(input15!!.toInt() < 514 && input15!!.toInt() > 10){
+//
+//    }
+//    else if(input15!!.toInt() < 10){
+//
+//    }
+//
+//// Networth of company
+//    if(input16!!.toInt() > 1336)   {
+////      billion US DOLLAR
+//
+//    }
+//    else if(input16!!.toInt() < 1336 && input16!!.toInt() > 25){
+//
+//    }
+//    else if(input16!!.toInt() < 25){
+//
+//    }
+//
+//
+//        // Networth of company
+//    if(input17!!.toInt() > 15)   {
+////      billion US DOLLAR
+//
+//    }
+//    else if(input17!!.toInt() < 15 && input17!!.toInt() > 13){
+//
+//    }
+//    else if(input17!!.toInt() < 13){
+//
+//    }
 
 
 
-        tv1.text = "Your company is spending more money on infrastructure than needed . "
-        tv2.text = "Your company is investing more than the money you need for service staff . You can optimise it by laying of some staff"
-        tv3.text = "You need to pay attention on your expenditure on the technical staff you are "
-        tv4.text = "You have more investors and less valuation"
-        tv5.text = "Raised fund is more than needed"
-        tv6.text = "Working hours of service staff is more than required hours"
-        tv7.text = "Raised fund is more than needed"
-        tv8.text = "You are overspending on service staff"
-        tv9.text = "You are overspending on technical staff"
-        tv10.text = "Your company is making Good Profit"
 
 
+//        tv1.text = "Your company is spending more money on infrastructure than needed . "
+//        tv2.text = "Your company is investing more than the money you need for service staff . You can optimise it by laying of some staff"
+//        tv3.text = "You need to pay attention on your expenditure on the technical staff you are "
+//        tv4.text = "You have more investors and less valuation"
+//        tv5.text = "Raised fund is more than needed"
+//        tv6.text = "Working hours of service staff is more than required hours"
+//        tv7.text = "Raised fund is more than needed"
+//        tv8.text = "You are overspending on service staff"
+//        tv9.text = "You are overspending on technical staff"
+//        tv10.text = "Your company is making Good Profit"
 
-        tv1.text = "Your company needs to spend some Money On Infrastructure  . "
-        tv2.text = "Your company is investing more than the money you need for service staff . You can optimise it by laying of some staff"
-        tv3.text = "You need to pay attention on your expenditure on the technical staff you are "
-        tv4.text = "You have more investors and less valuation"
-        tv5.text = "Raised fund is more than needed"
-        tv6.text = "Working hours of service staff is more than required hours"
-        tv7.text = "Raised fund is more than needed"
-        tv8.text = "You are overspending on service staff"
-        tv9.text = "You are overspending on technical staff"
-        tv10.text = "Your company is making Good Profit"
+
+//
+//        tv1.text = "Your company needs to spend some Money On Infrastructure  . "
+//        tv2.text = "Your company is investing more than the money you need for service staff . You can optimise it by laying of some staff"
+//        tv3.text = "You need to pay attention on your expenditure on the technical staff you are "
+//        tv4.text = "You have more investors and less valuation"
+//        tv5.text = "Raised fund is more than needed"
+//        tv6.text = "Working hours of service staff is more than required hours"
+//        tv7.text = "Raised fund is more than needed"
+//        tv8.text = "You are overspending on service staff"
+//        tv9.text = "You are overspending on technical staff"
+//        tv10.text = "Your company is making Good Profit"
 
 
     }
