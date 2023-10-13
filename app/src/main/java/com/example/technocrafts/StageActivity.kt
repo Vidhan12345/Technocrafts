@@ -87,7 +87,7 @@ class StageActivity : AppCompatActivity() {
 //
 //
 //
-
+//
 
     if(input3!!.toFloat() > 42.5  )   {
 tv2.text = "Your company is investing more than the money you need for service staff . You can optimise it by laying of some staff"
@@ -265,9 +265,32 @@ tv10.text = "Need to work in profit making "
     }
 
 
-
-
-
+//
+//
+//
+//        tv1.text = "Your company is spending more money on infrastructure than needed . "
+//        tv2.text = "Your company is investing more than the money you need for service staff . You can optimise it by laying of some staff"
+//        tv3.text = "You need to pay attention on your expenditure on the technical staff you are "
+//        tv4.text = "You have more investors and less valuation"
+//        tv5.text = "Raised fund is more than needed"
+//        tv6.text = "Working hours of service staff is more than required hours"
+//        tv7.text = "Raised fund is more than needed"
+//        tv8.text = "You are overspending on service staff"
+//        tv9.text = "You are overspending on technical staff"
+//        tv10.text = "Your company is making Good Profit"
+//
+//
+//
+//        tv1.text = "Your company needs to spend some Money On Infrastructure  . "
+//        tv2.text = "Your company is investing more than the money you need for service staff . You can optimise it by laying of some staff"
+//        tv3.text = "You need to pay attention on your expenditure on the technical staff you are "
+//        tv4.text = "You have more investors and less valuation"
+//        tv5.text = "Raised fund is more than needed"
+//        tv6.text = "Working hours of service staff is more than required hours"
+//        tv7.text = "Raised fund is more than needed"
+//        tv8.text = "You are overspending on service staff"
+//        tv9.text = "You are overspending on technical staff"
+//        tv10.text = "Your company is making Good Profit"
 
 
 
