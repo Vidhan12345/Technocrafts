@@ -12,15 +12,16 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Overall Analytics"
         android:background="@color/yellow"
         android:gravity="center"
-        android:textSize="25dp"
-        />
+        android:text="Overall Analytics"
+        android:textColor="@color/material_dynamic_neutral0"
+        android:textSize="30dp" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#E8F195">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,9 +35,7 @@
                 android:layout_marginTop="25dp"
                 android:text="TextView"
                 android:textAlignment="center"
-                android:textSize="20sp"
-
-                />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -52,7 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:text="@string/empty"
+                android:text="TextView"
                 android:textAlignment="center"
                 android:textSize="20sp" />
 

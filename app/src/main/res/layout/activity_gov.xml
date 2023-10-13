@@ -174,42 +174,55 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16dp"
+                android:textSize="20dp"
                 android:layout_margin="20dp"
+                android:background="#5C8DD8"
                 android:id="@+id/gtv1"
+                android:gravity="center"
                 ></TextView>
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16dp"
+                android:textSize="20dp"
                 android:layout_margin="20dp"
+                android:gravity="center"
+                android:background="#5C8DD8"
                 android:id="@+id/gtv2"
                 ></TextView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16dp"
+                android:textSize="20dp"
                 android:layout_margin="20dp"
+                android:gravity="center"
                 android:id="@+id/gtv3"
+                android:background="#5C8DD8"
+
                 ></TextView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16dp"
+                android:textSize="20dp"
                 android:layout_margin="20dp"
+                android:gravity="center"
                 android:id="@+id/gtv4"
+                android:background="#5C8DD8"
+
                 ></TextView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16dp"
+                android:textSize="20dp"
                 android:layout_margin="20dp"
+                android:gravity="center"
                 android:id="@+id/gtv5"
+                android:background="#5C8DD8"
+
                 ></TextView>
 
 
